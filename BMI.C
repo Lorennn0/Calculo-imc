@@ -1,5 +1,4 @@
-
-#include <stdio.h>Add commentMore actions
+#include <stdio.h>
 
 int main()
 
@@ -27,14 +26,19 @@ return 1;
 
     // Mostrar el resultado
     printf("\nSu indice de masa corporal (IMC) es: %.2f\n", imc);
+    
+    if(imc<=18.5){
+        printf ("Usted tiene bajo peso\n");
+    }
+    else if(imc>18.5 && imc<24.5){
+        printf("Usted tiene un peso normal, está saludable\n");
+    }
+    else if(imc>=24.5 && imc<30){
+        printf("Usted tiene sobrepeso\n");
+    }
+    else if(imc>30){
+        printf("Usted sufre de obesidad\n");
+    }
 
-    // Mostrar tabla de referencia
-    printf("\nTabla de referencia IMC:\n");
-    printf("-----------------------------\n");
-    printf("IMC menor a 18.5   : Bajo peso\n");
-    printf("IMC entre 18.5-24.9: Peso normal\n");
-    printf("IMC entre 25-29.9  : Sobrepeso\n");
-    printf("IMC 30 o mayor     : Obesidad\n");
-    printf("-----------------------------\n");Add commentMore actions
  return 0;
 }
