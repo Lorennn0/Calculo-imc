@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 #define PI 3.1416
 
 
@@ -69,7 +69,7 @@ int calcularAreaRectangulo(int altura, int longitud){
 
 int calcularDiagonalRectangulo(int altura, int longitud){
     int diagonal;
-    diagonal = (altura*altura) + (longitud*longitud);
+    diagonal = sqrt((altura*altura) + (longitud*longitud));
    
     return diagonal;
 }
